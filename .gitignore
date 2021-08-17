@@ -25,3 +25,6 @@ yarn-error.log*
 /src
 /public
 README.md
+
+package-lock.json
+package.json
