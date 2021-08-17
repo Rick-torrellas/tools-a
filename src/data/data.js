@@ -14,9 +14,9 @@ const data = [
 */
 {
     title: 'ola',
-    desc: 'vagina',
+    desc: '',
     npmClone: '',
-    githubClone: '',
+    githubClone: 'd',
     githubRepo: '',
     npmRepo: '',
     docs: '',

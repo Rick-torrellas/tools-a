@@ -77,7 +77,7 @@ values.logoPath = logoPath;
 values.officialPage = officialPage;
 // Debug
         return (
-          <Card style={{ width: "18rem" }} border="warning">
+          <Card style={{ width: "60%" }} border="warning">
             <Card.Header style={{backgroundColor: 'rgba(66, 61, 61,0.2)',color: 'white'}}>
     <Card.Title>
     <Iicon path={logoPath} /> {title}
@@ -85,46 +85,7 @@ values.officialPage = officialPage;
     </Card.Header>
           <Card.Body>
             <Card.Text>{desc}</Card.Text>
-{/* TODO: transformar al overlay en un componente aparte */}
-TODO: Colocar un condicionador, si no se tienen ni npmClone o githubClone, entonces no se mostrara el componente
-            <>
-    <OverlayTrigger
-      trigger="click"
-      placement={'bottom'}
-      overlay={
-        <Popover id={`popover-positioned-bottom`}>
-            {npmClone &&
-            <>
-            <Popover.Header as="h3">NPM</Popover.Header>
-            <Popover.Body>
-              <code>{npmClone}</code>
-              <CopyToClipboard text={npmClone}>
-                <span><Iclipboard code={npmClone} /></span>    
-            </CopyToClipboard>
-            </Popover.Body>
-            </>
-            }
-            {githubClone && 
-            <>
-          <Popover.Header as="h3">Github</Popover.Header>
-          <Popover.Body>
-            <code>{githubClone}</code>
-            
-            <CopyToClipboard text={githubClone}>
-              <span><Iclipboard code={githubClone} /></span>    
-          </CopyToClipboard>
-          
-          </Popover.Body>
-          </>
-          }
-        </Popover>
-      }
-    >
-      <Button variant="secondary" className="badge bg-danger" style={{marginLeft: '80%'}}>
-        Install
-        </Button>
-      </OverlayTrigger>
-</>         
+           <Overley npmCLone={npmClone} githubClone={githubClone}/>
           </Card.Body>
           <Card.Footer style={{backgroundColor: 'rgba(255, 28, 28, 0.8)'}}>
           <Card.Link href={githubRepo}>
@@ -152,44 +113,46 @@ TODO: Colocar un condicionador, si no se tienen ni npmClone o githubClone, enton
         )
 }
 function Overley(props) {
-  return (
-    <>
-    <OverlayTrigger
-      trigger="click"
-      placement={'bottom'}
-      overlay={
-        <Popover id={`popover-positioned-bottom`}>
-            {npmClone &&
-            <>
-            <Popover.Header as="h3">NPM</Popover.Header>
+   if (props.npmClone || props.githubClone) {
+     return (
+      <>
+      <OverlayTrigger
+        trigger="click"
+        placement={'bottom'}
+        overlay={
+          <Popover id={`popover-positioned-bottom`}>
+              {props.npmClone &&
+              <>
+              <Popover.Header as="h3">NPM</Popover.Header>
+              <Popover.Body>
+                <code>{props.npmClone}</code>
+                <CopyToClipboard text={props.npmClone}>
+                  <span><Iclipboard code={props.npmClone} /></span>    
+              </CopyToClipboard>
+              </Popover.Body>
+              </>
+              }
+              {props.githubClone && 
+              <>
+            <Popover.Header as="h3">Github</Popover.Header>
             <Popover.Body>
-              <code>{npmClone}</code>
-              <CopyToClipboard text={npmClone}>
-                <span><Iclipboard code={npmClone} /></span>    
+              <code>{props.githubClone}</code>
+              
+              <CopyToClipboard text={props.githubClone}>
+                <span><Iclipboard code={props.githubClone} /></span>    
             </CopyToClipboard>
+            
             </Popover.Body>
             </>
             }
-            {githubClone && 
-            <>
-          <Popover.Header as="h3">Github</Popover.Header>
-          <Popover.Body>
-            <code>{githubClone}</code>
-            
-            <CopyToClipboard text={githubClone}>
-              <span><Iclipboard code={githubClone} /></span>    
-          </CopyToClipboard>
-          
-          </Popover.Body>
-          </>
-          }
-        </Popover>
-      }
-    >
-      <Button variant="secondary" className="badge bg-danger" style={{marginLeft: '80%'}}>
-        Install
-        </Button>
-      </OverlayTrigger>
-</>      
-  )
+          </Popover>
+        }
+      >
+        <Button variant="secondary" className="badge bg-danger" style={{marginLeft: '70%'}}>
+          Install
+          </Button>
+        </OverlayTrigger>
+  </>    
+     )
+   } else return null;
 }
