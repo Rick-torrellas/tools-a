@@ -16,9 +16,9 @@ export function Inpm() {
 export function IofficialPage() {
   return (
     <ImagenRounded 
-        path='/icon/planet-earth.png'
-        size="30px"
-        margin="ms-3"
+        path='https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629293147/earth-globe_p6d5xk.png'
+        size="15%"
+        title="Official Web"
     />
   )
 }
@@ -27,7 +27,7 @@ export function Iicon(props) {
     return (
       <ImagenRounded 
       path={props.path}
-      size="60px"
+      size="15%"
       margin="me-2"
       />
     )
@@ -38,16 +38,15 @@ export function Igithub() {
   return (
     <ImagenRounded 
     title="Github Repo" 
-    path="/icon/github.png" 
-    size="30px" 
-    margin="ms-3"
+    path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292989/github_e0hmvz.png" 
+    size="15%"
     />
   );
 }
 export function Ibook() {
   return <ImagenRounded 
   title="Docs" 
-  path="/icon/open-book.png" 
+  path="/icon/open-book.pnghttps://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292870/open-book_pbfd0w.png" 
   size="30px" 
   margin="ms-3"
   />;
@@ -112,18 +111,27 @@ export class  Iclipboard extends React.Component {
     return (
       <ImagenRounded
         title="Copy to Clipboard"
-        path="/icon/clipboard.png"
-        size="30px"
+        path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629293285/clipboard_znfqlk.png"
+        size="10%"
         margin="ms-3"
       />
     )};
+}
+export function Ilogo() {
+  return (
+    <ImagenRounded 
+    size="15%"
+    path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292504/tools_urw6zg.png"
+    margin="me-5"
+    />
+  )
 }
 function ImagenRounded(props) {
   return (
     <Image
       title={props.title}
       className={props.margin}
-      src={process.env.PUBLIC_URL + props.path}
+      src={props.path}
       style={{ width: props.size }}
       rounded
     />

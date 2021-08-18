@@ -2,7 +2,7 @@
   "name": "tools",
   "version": "0.1.0",
   "private": true,
-  "gomepage": "http://rick-torrellas.github.io/tools/",
+  "homepage": "http://rick-torrellas.github.io/tools/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

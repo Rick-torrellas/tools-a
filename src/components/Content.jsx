@@ -51,6 +51,7 @@ function Colum(props) {
         npmRepo={props.npmRepo}
         docs={props.docs}
         logoPath={props.logoPath}
+        officialPage={props.officialPage}
       />
     </Col>
   )
@@ -76,10 +77,11 @@ values.npmRepo = npmRepo;
 values.logoPath = logoPath;
 values.officialPage = officialPage;
 // Debug
-        return (
-          <Card style={{ width: "60%" }} border="warning">
-            <Card.Header style={{backgroundColor: 'rgba(66, 61, 61,0.2)',color: 'white'}}>
-    <Card.Title>
+if (title || desc || npmClone || githubClone || githubRepo || npmRepo || docs || logoPath || officialPage) {
+  return (
+<Card style={{ width: "60%" }} border="warning">
+            <Card.Header style={{backgroundColor: 'rgba(66, 61, 61,0.2)',color: 'dark'}}>
+    <Card.Title >
     <Iicon path={logoPath} /> {title}
     </Card.Title>
     </Card.Header>
@@ -98,7 +100,7 @@ values.officialPage = officialPage;
                 <Inpm />
               }
             </Card.Link>
-            <Card.Link>
+            <Card.Link href={officialPage}>
               {officialPage &&
               <IofficialPage />
               }
@@ -110,7 +112,8 @@ values.officialPage = officialPage;
             </Card.Link>
           </Card.Footer>
         </Card>
-        )
+    )
+} else return null;  
 }
 function Overley(props) {
    if (props.npmClone || props.githubClone) {
@@ -135,13 +138,11 @@ function Overley(props) {
               {props.githubClone && 
               <>
             <Popover.Header as="h3">Github</Popover.Header>
-            <Popover.Body>
-              <code>{props.githubClone}</code>
-              
-              <CopyToClipboard text={props.githubClone}>
+            <Popover.Body >
+              <code >{props.githubClone}</code> 
+            <CopyToClipboard text={props.githubClone}>
                 <span><Iclipboard code={props.githubClone} /></span>    
             </CopyToClipboard>
-            
             </Popover.Body>
             </>
             }
