@@ -149,7 +149,7 @@ function Overley(props) {
           </Popover>
         }
       >
-        <Button variant="secondary" className="badge bg-danger" style={{marginLeft: '70%'}}>
+        <Button variant="secondary" className="badge bg-danger" style={{marginLeft: '60%'}}>
           Install
           </Button>
         </OverlayTrigger>

@@ -43,18 +43,18 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321849/icons/feedback_gwi6gk.png',
     officialPage: ''
 }, 
 {
-    title: 'Compass',
+    title: 'Brujula',
     desc: '',
     npmClone: '',
     githubClone: '',
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301281/icons/compass_lic0wu.png',
     officialPage: ''
 }, 
 {
@@ -65,7 +65,7 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322001/icons/minecraft_z8vdf1.png',
     officialPage: ''
 }, 
 {
@@ -76,7 +76,7 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322161/icons/web-settings_rfwydn.png',
     officialPage: ''
 }, 
 {
@@ -87,7 +87,7 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322170/icons/window_ombxrj.png',
     officialPage: ''
 }, 
 {
@@ -98,7 +98,7 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321827/icons/exe_rnigjf.png',
     officialPage: ''
 }, 
 {
@@ -109,7 +109,7 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629307368/icons/notebook_1_i1mnyb.png',
     officialPage: ''
 }, 
 {
@@ -120,7 +120,358 @@ const data = [
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322080/icons/smiling_oynovs.png',
+    officialPage: ''
+}, 
+{
+    title: 'Game Tools',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321921/icons/joystick_kvioex.png',
+    officialPage: ''
+}, 
+{
+    title: 'Component',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322109/icons/template_kguvvt.png',
+    officialPage: ''
+}, 
+{
+    title: 'Xamples',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322154/icons/web-page_zspqfa.png',
+    officialPage: ''
+}, 
+{
+    title: 'Tutorials',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322145/icons/video-tutorial_qh9w9r.png',
+    officialPage: ''
+}, 
+{
+    title: 'T',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321291/icons/anj_aslykq.png',
+    officialPage: ''
+}, 
+{
+    title: 'Core',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321312/icons/atom_e3ezu6.png',
+    officialPage: ''
+}, 
+{
+    title: 'Core Cli',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629332470/icons/atom_mghp15.png',
+    officialPage: ''
+}, 
+{
+    title: 'Core Stylus',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322636/icons/atom_v25qrd.png',
+    officialPage: ''
+}, {
+    title: 'History',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322030/icons/parchment_pz1nbn.png',
+    officialPage: ''
+}, 
+{
+    title: 'VS Code Pluggins',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629307416/icons/visual-studio_s3hqvw.png',
+    officialPage: ''
+}, 
+{
+    title: 'Keywords',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301690/icons/keyboard-key_tank2q.png',
+    officialPage: ''
+},
+{
+    title: 'Niche',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322134/icons/tienda_kspmml.png',
+    officialPage: ''
+},  
+{
+    title: 'Bitacora',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301874/icons/rudder_uv4par.png',
+    officialPage: ''
+}, 
+{
+    title: 'Work',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322650/icons/briefcase_smdfml.png',
+    officialPage: ''
+}, 
+{
+    title: 'Workspace',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301152/icons/blacksmith_yc4kau.png',
+    officialPage: ''
+}, 
+{
+    title: 'Keys',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301681/icons/key_mrkuvw.png',
+    officialPage: ''
+}, 
+{
+    title: 'Kanban',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301660/icons/kanban_oifhu7.png',
+    officialPage: ''
+},
+{
+    title: 'Like',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322126/icons/thumb-up_hkj40v.png',
+    officialPage: ''
+},
+{
+    title: 'Image',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322050/icons/picture_ljahpr.png',
+    officialPage: ''
+},
+{
+    title: 'Fonts',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322117/icons/text_zdae18.png',
+    officialPage: ''
+}, 
+{
+    title: 'Link',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301765/icons/link_miwfcz.png',
+    officialPage: ''
+}, 
+{
+    title: 'Memory Card',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321939/icons/memory-card_ihsslg.png',
+    officialPage: ''
+}, 
+{
+    title: 'Game Maps',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322061/icons/place_o1phic.png',
+    officialPage: ''
+}, 
+{
+    title: 'Game Items',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321902/icons/inventory_reogtm.png',
+    officialPage: ''
+}, 
+{
+    title: 'Pages',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629307175/icons/document_nck9hz.png',
+    officialPage: ''
+}, 
+{
+    title: 'Scripts',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321329/icons/binary-code_moz4mx.png',
+    officialPage: ''
+}, 
+{
+    title: 'wallpaper',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322170/icons/window_ombxrj.png',
+    officialPage: ''
+}, 
+{
+    title: 'Templates',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629321834/icons/fabric_p5lidc.png',
+    officialPage: ''
+},
+{
+    title: 'Portafolio',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322671/icons/portafolio_lf8r9q.png',
+    officialPage: ''
+},  
+{
+    title: 'Wordpress Plugins',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322757/icons/wordpress_ea7hvk.svg',
+    officialPage: ''
+}, 
+{
+    title: 'Marcadores',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629306968/icons/bookmark_zc6kqx.png',
+    officialPage: ''
+}, 
+{
+    title: 'HTML Special Characters',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629333465/icons/text-html-symbolic_wryhmj.svg',
     officialPage: ''
 }, 
 ];
