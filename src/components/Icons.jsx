@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 
-export default function Icons() {
-  return <div></div>;
-}
-export function Inpm() {
+const Icons = {}
+
+export default Icons();
+
+Icons.npm = function() {
   return (
     <ImagenRounded 
-        path="/icon/npm.png"
+        path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322014/icons/npm_lcqxoe.svg"
         size="30px"
         margin="ms-3"
     />
@@ -46,7 +47,7 @@ export function Igithub() {
 export function Ibook() {
   return <ImagenRounded 
   title="Docs" 
-  path="/icon/open-book.pnghttps://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292870/open-book_pbfd0w.png" 
+  path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301790/icons/open-book_fbfnip.png" 
   size="30px" 
   margin="ms-3"
   />;
@@ -101,7 +102,7 @@ export function Irating(props) {
 export function Istart() {
   return <ImagenRounded 
   title="Rating" 
-  path="/icon/star.png" 
+  path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629302749/icons/star_zz2nlm.png" 
   size="15px" 
   margin="ms-3"
   />;

@@ -135,14 +135,14 @@ const data = [
     officialPage: ''
 }, 
 {
-    title: 'Component',
+    title: 'Core Component',
     desc: '',
     npmClone: '',
     githubClone: '',
     githubRepo: '',
     npmRepo: '',
     docs: '',
-    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322109/icons/template_kguvvt.png',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629335316/icons/atom_2_ysjk0k.png',
     officialPage: ''
 }, 
 {
@@ -474,6 +474,16 @@ const data = [
     logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629333465/icons/text-html-symbolic_wryhmj.svg',
     officialPage: ''
 }, 
+{
+    title: 'Wordpress Themes',
+    desc: '',
+    npmClone: '',
+    githubClone: '',
+    githubRepo: '',
+    npmRepo: '',
+    docs: '',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629334572/icons/wordpress-plain-wordmark_hfw5sj.svg',
+    officialPage: ''
+}, 
 ];
-
 export default data;
