@@ -1,97 +1,121 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
+import config from "./../config";
 
 const Icons = {}
 
-export default Icons();
-
-Icons.npm = function() {
+Icons.Npm = function(props) {
+  const title = props.title ? props.title : "NPM";
+  const src = props.src ? props.src : config.icons.npm;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
   return (
-    <ImagenRounded 
-        path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322014/icons/npm_lcqxoe.svg"
-        size="30px"
-        margin="ms-3"
-    />
-  )
-}
-export function IofficialPage() {
-  return (
-    <ImagenRounded 
-        path='https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629293147/earth-globe_p6d5xk.png'
-        size="15%"
-        title="Official Web"
-    />
-  )
-}
-export function Iicon(props) {
-  if (props.path) {
-    return (
-      <ImagenRounded 
-      path={props.path}
-      size="15%"
-      margin="me-2"
-      />
-    )
-  } else return null;
-}
-
-export function Igithub() {
-  return (
-    <ImagenRounded 
-    title="Github Repo" 
-    path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292989/github_e0hmvz.png" 
-    size="15%"
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
     />
   );
 }
-export function Ibook() {
-  return <ImagenRounded 
-  title="Docs" 
-  path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301790/icons/open-book_fbfnip.png" 
-  size="30px" 
-  margin="ms-3"
-  />;
+Icons.Logo = function(props) {
+  const title = props.title;
+  const src = props.src ? props.src : config.icons.logo;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+  );
 }
-export function Irating(props) {
+Icons.Github = function(props) {
+  const title = props.title ? props.title : "Github";
+  const src = props.src ? props.src : config.icons.github;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+  );
+}
+Icons.Book = function(props) {
+  const title = props.title ? props.title : "Docs";
+  const src = props.src ? props.src : config.icons.book;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+  );
+}
+Icons.Rating = function(props) {
   const rating = props.rating;
   if (rating === 1) {
-    return <Istart />;
+    return <Icons.Start />;
   }
   if (rating === 2) {
     return (
       <div>
-        <Istart />
-        <Istart />
+        <Icons.Start />
+        <Icons.Start />
       </div>
     )
   } 
   if (rating === 3) {
     return (
       <div>
-        <Istart />
-        <Istart />
-        <Istart />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
       </div>
     )
   } 
   if (rating === 4) {
     return (
       <div>
-        <Istart />
-        <Istart />
-        <Istart />
-        <Istart />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
       </div>
     )
   } 
   if (rating === 5) {
     return (
       <div>
-        <Istart />
-        <Istart />
-        <Istart />
-        <Istart />
-        <Istart />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
+        <Icons.Start />
       </div>
     )
   } 
@@ -99,42 +123,92 @@ export function Irating(props) {
     return null;
   }
 }
-export function Istart() {
-  return <ImagenRounded 
-  title="Rating" 
-  path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629302749/icons/star_zz2nlm.png" 
-  size="15px" 
-  margin="ms-3"
-  />;
-}
-export class  Iclipboard extends React.Component {
-  render () {
-    return (
-      <ImagenRounded
-        title="Copy to Clipboard"
-        path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629293285/clipboard_znfqlk.png"
-        size="10%"
-        margin="ms-3"
-      />
-    )};
-}
-export function Ilogo() {
+Icons.Start = function(props) {
+  const title = props.title;
+  const src = props.src ? props.src : config.icons.star;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
   return (
-    <ImagenRounded 
-    size="15%"
-    path="https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292504/tools_urw6zg.png"
-    margin="me-5"
-    />
-  )
-}
-function ImagenRounded(props) {
-  return (
-    <Image
-      title={props.title}
-      className={props.margin}
-      src={props.path}
-      style={{ width: props.size }}
-      rounded
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
     />
   );
 }
+Icons.Clipboard =  function(props) {
+  const title = props.title ? props.title : "Copy to Clipboard";
+  const src = props.src ? props.src : config.icons.clipboard;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+  );
+}
+Icons.Youtube = function(props) {
+  const title = props.title ? props.title : "Youtube";
+  const src = props.src ? props.src : config.icons.youtubeu;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+    )
+}
+Icons.Web = function(props) {
+  const title = props.title ? props.title : "Official Web";
+  const src = props.src ? props.src : config.icons.web;
+  const width = props.width;
+  const height = props.height;
+  const margin = props.margin;
+  const padding = props.padding;
+  return (
+    < Imagen
+      title={title}
+      src={src}
+      width={width}
+      height={height}
+      margin={margin}
+      padding={padding}
+    />
+  )
+}
+export function Imagen(props) {
+  const title = props.title;
+  const src = props.src ? props.src : config.icons.noIcon;
+  const width = props.width ? props.width : "50%";
+  const height = props.height ? props.height : "20%";
+  const padding = props.padding ? props.padding : "0";
+  const margin = props.margin ? props.margin : "0";
+  return (
+    <Image
+      title={title}
+      src={src}
+      style={{ width: width ,height: height,margin: margin,padding: padding}}
+    />
+  );
+}
+
+export default Icons;

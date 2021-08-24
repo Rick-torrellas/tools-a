@@ -21,7 +21,7 @@ const data = [
     githubRepo: 'https://github.com/Rick-torrellas/tools',
     npmRepo: '',
     docs: '',
-    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292504/tools_urw6zg.png',
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629302826/icons/tools_chfp9c.png',
     officialPage: 'https://rick-torrellas-tools.herokuapp.com/'
 },
 {
@@ -33,7 +33,7 @@ const data = [
     npmRepo: '',
     docs: '',
     officialPage: 'https://rick-torrellas-npm-packages.herokuapp.com/',
-    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629292743/box_v5uy1d.png'
+    logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301236/icons/box_b0m2pp.png'
 },
 {
     title: 'HTML Emojis',
