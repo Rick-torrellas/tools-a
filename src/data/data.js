@@ -154,7 +154,7 @@ const data = [
     npmRepo: '',
     docs: '',
     logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629322154/icons/web-page_zspqfa.png',
-    officialPage: ''
+    officialPage: 'https://rick-torrellas-xamples.herokuapp.com/'
 }, 
 {
     title: 'Tutorials',
@@ -277,7 +277,7 @@ const data = [
     officialPage: ''
 }, 
 {
-    title: 'Workspace',
+    title: 'Taller',
     desc: '',
     npmClone: '',
     githubClone: '',
@@ -285,7 +285,7 @@ const data = [
     npmRepo: '',
     docs: '',
     logoPath: 'https://res.cloudinary.com/rick-rick-torrellas/image/upload/v1629301152/icons/blacksmith_yc4kau.png',
-    officialPage: ''
+    officialPage: 'https://rick-torrellas-taller.herokuapp.com/'
 }, 
 {
     title: 'Keys',
